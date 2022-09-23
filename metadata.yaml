@@ -1,0 +1,18 @@
+# Copyright 2022 Canonical Ltd.
+# See LICENSE file for licensing details.
+
+# For a complete list of supported options, see:
+# https://juju.is/docs/sdk/metadata-reference
+
+name: hpct-ldap-node-operator
+display-name: |
+  LDAP node operator
+description: |
+  Principal operator for cluster LDAP node.
+summary: |
+  Principal operator for cluster LDAP node.
+
+provides:
+  ldap-server-ready:
+    interface: subordinate-ready
+    scope: container
