@@ -21,8 +21,8 @@ logger = logging.getLogger(__name__)
 class HpctLDAPNodeCharm(NodeCharm):
     """Operator for cluster LDAP node."""
 
-    def __init__(self, *args):
-        super().__init__(*args)
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
         self.interfaces = {
             "ldap-server-ready": interface_registry.load(
