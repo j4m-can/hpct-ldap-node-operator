@@ -13,6 +13,10 @@ summary: |
   Principal operator for cluster LDAP node.
 
 provides:
+  ldap-client-ready:
+    interface: subordinate-ready
+    scope: container
+
   ldap-server-ready:
     interface: subordinate-ready
     scope: container
