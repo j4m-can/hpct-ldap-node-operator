@@ -11,7 +11,7 @@ import logging
 
 from ops.main import main
 
-from hpctinterface.relation import interface_registry
+from hpctinterfaces.relation import interface_registry
 from hpctops.charm.node import NodeCharm
 
 
